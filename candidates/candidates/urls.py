@@ -18,8 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from candidateapp import views  
 
-urlpatterns = [  
-    path('admin/', admin.site.urls),  
+urlpatterns = [    
     path('emp', views.emp),  
     path('show',views.show),  
     path('edit/<int:id>', views.edit),  
