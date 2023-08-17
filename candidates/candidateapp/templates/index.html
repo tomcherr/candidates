@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <form method="POST" action="/emp">
+        {% csrf_token %}
+        <div>
+            <br>
+            <p>
+                <h3>Enter Candidate Details</h3>
+            </p>
+            <div>
+                <p>First Name:</p>{{ form.first_name }}
+            </div>
+            <div>
+                <p>Last Name:</p>{{ form.last_name }}
+            </div>
+            <div>
+                <p>Email:</p>{{ form.email }}
+            </div>
+            <div>
+                <p>Persona:</p>{{ form.persona }}
+            </div>
+      
+            <div>
+                <p>Contact Primary:</p>{{ form.contact_no_primary }}
+            </div>
+            <div>
+                <p>Contact Alternate:</p>{{ form.contact_no_alternate }}
+            </div>
+   
+            <div>
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
