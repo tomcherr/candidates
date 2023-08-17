@@ -22,3 +22,8 @@ contenttypes
  [X] 0002_remove_content_type_name
 sessions
  [X] 0001_initial
+Django==3.2.11
+django-crispy-forms==2.0
+Jinja2==3.1.2
+requests==2.30.0
+virtualenv==20.23.0
